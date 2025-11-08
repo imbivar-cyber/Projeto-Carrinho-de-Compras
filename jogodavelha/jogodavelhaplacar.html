@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha com Placar</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-size: 36px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    td {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      border: 2px solid #444;
+      transition: background-color 0.2s;
+    }
+
+    td:hover {
+      background-color: #ddd;
+    }
+
+    #aviso {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    #reiniciar {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #reiniciar:hover {
+      background-color: #45a049;
+    }
+
+    /* Placar */
+    #placar {
+      margin: 20px auto;
+      background-color: #fff;
+      width: 260px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    #placar div {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body onload="iniciar()">
+
+  <h1>🎮 Jogo da Velha com Placar</h1>
+
+  <!-- Placar -->
+  <div id="placar">
+    <div>🏆 Jogador 1 (X): <span id="vitorias1">0</span></div>
+    <div>🏆 Jogador 2 (O): <span id="vitorias2">0</span></div>
+    <div>🤝 Empates: <span id="empates">0</span></div>
+  </div>
+
+  <!-- Tabuleiro -->
+  <div id="board"></div>
+
+  <div id="aviso">Vez do jogador 1</div>
+
+  <button id="reiniciar" onclick="iniciar()">🔄 Reiniciar Jogo</button>
+
+  <script src="js/jogodavelhaplacar.js"></script>
+</body>
+</html>

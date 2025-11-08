@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="br-PT  ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha da Isa</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css ">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="container mt-4">    
+    <h1><i id="card" class="bi bi-cart-check"></i>Lojinha da Isa</h1>
+    <p>Bem-vindo à Lojinha da Isa! Aqui você encontra os melhores produtos com os preços mais incríveis.</p>    
+
+    <table class="table table-hover table-bordered  ">
+        
+<thead>
+    <tr>
+        <th>Imagem</th>
+        <th>Produto</th>
+        <th>Descrição</th>
+        <th>Preço Unitário</th>
+        <th>Quantidade</th>
+        <th>Total</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><img src="img/note.webp" alt="Produto 1" width="200"></td>
+        <td>Notebook Gamer</td>
+        <td>SSD 2T - I9 - 32GB
+            <div><span class="codproduto">Cod.IMB25</span></div>
+        </td>
+        <td id="valor_1">R$ 3900</td>
+        <td>
+         <span class="badge bg-danger" onclick="alterarquantidade(1, '-')"><i class="bi bi-cart-dash-fill"></i></span>
+        <span id="quantidade_1">0</span>
+         <span class="badge bg-success" onclick="alterarquantidade(1, '+')"><i class="bi bi-cart-plus"></i></span>
+        </td>
+        <td id="total_1">0</td>
+    </tr>
+    <tr>
+        <td><img src="img/celular.webp" alt="Produto 2" width="150"></td>
+        <td>Celular</td>
+        <td>200MPX - 540GB
+        <div><span class="codproduto">Cod.CEL45</span></div>
+        </td>
+        <td id="valor_2">R$ 1500</td>
+        <td>
+        <span class="badge bg-danger" onclick="alterarquantidade(2, '-')"><i class="bi bi-cart-dash-fill"></i></span>
+        <span id="quantidade_2">0</span>
+         <span class="badge bg-success" onclick="alterarquantidade(2, '+')"><i class="bi bi-cart-plus"></i></span>   
+        </td>
+        <td id="total_2">0</td>
+    </tr>
+    <tr>
+        <td><img src="img/PC Gamer.webp" alt="Produto 3" width="150"></td>
+        <td>PC Gamer</td>
+        <td>SSD 2T - I9 - 32GB
+            <div><span class="codproduto">Cod PC039</span></div>
+        </td>
+        <td id="valor_3">R$ 40</td>
+        <td>
+        <span class="badge bg-danger" onclick="alterarquantidade(3, '-')"><i class="bi bi-cart-dash-fill"></i></span>
+        <span id="quantidade_3">0</span>
+         <span class="badge bg-success" onclick="alterarquantidade(3, '+')"><i class="bi bi-cart-plus"></i></span>
+        </td>
+        <td id="total_3">0</td>
+    </tr>   
+    <tr>
+        <td><img src="img/tv.jpg" alt="Produto 4" width="200"></td>
+        <td>TV Última Geração</td>
+        <td>Tela infinita - 4K - 3D
+            <div><span class="codproduto">Cod TV890</span></div>
+        </td>
+        <td id="valor_4">R$ 4599</td>
+        <td>
+        <span class="badge bg-danger" onclick="alterarquantidade(4,'-')"><i class="bi bi-cart-dash-fill"></i></span>
+        <span id="quantidade_4">0</span>
+         <span class="badge bg-success" onclick="alterarquantidade(4,'+')"><i class="bi bi-cart-plus"></i></span>
+        </td>
+        <td id="total_4">0</td>
+    </tr>   
+    <tr>
+        <td><img src="img/teclado tablet.webp" alt="Produto 5" width="200"></td>
+        <td>Capa com teclado</td>
+        <td>Configuração PT
+        <div><span class="codproduto">Cod CT123</span></div>
+        </td>
+        <td id="valor_5">R$ 45</td>
+        <td>
+        <span class="badge bg-danger" onclick="alterarquantidade(5,'-')"><i class="bi bi-cart-dash-fill"></i></span>
+        <span id="quantidade_5">0</span>
+         <span class="badge bg-success" onclick="alterarquantidade(5,'+')"><i class="bi bi-cart-plus"></i></span>
+        </td>
+        <td id="total_5">0</td>
+    </tr>   
+
+</tbody>
+    </table>
+    <footer class="text-center">
+    <span><i class="bi bi-cash-coin"></i>Total:</span><br>
+    <span id="Total"><h4>0</h4></span> <!-- Este será o total geral do carrinho -->
+    <p></p>
+    <button class="btn btn-danger" onclick="finalizarcompra()">Finalizar Compra</button>
+</footer> 
+    </div>
+</body>
+</html>

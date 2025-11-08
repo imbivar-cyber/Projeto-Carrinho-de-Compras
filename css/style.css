@@ -1,0 +1,25 @@
+h1{
+border: red 5px solid;
+padding: 10px;
+margin: 30px o 30px 0;
+padding: 30px;
+text-align: center;
+
+}
+#card{
+    color: red;
+}   
+
+footer, p{
+    background-color: rgb(211, 207, 207);
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(8, 8, 8);
+}   
+
+.codproduto{
+    font-weight: bold;
+}
